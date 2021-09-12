@@ -3,8 +3,6 @@
 
 import numpy as np
 
-random_number = np.random.randint(1, 101)
-
 def number_predict(number: int = 1) -> int:
     """Функция угадывания числа.
     Реализуется путем сокращения диапазона возможных чисел в 2 раза после каждой неудачной попытки угадать.
@@ -39,4 +37,22 @@ def number_predict(number: int = 1) -> int:
     return count
 
 
-print(f'Число {random_number} было отгадано за {number_predict(random_number)} шага(-ов).')
+def score_game(number_predict) -> int:
+    """За какое количство попыток в среднем за 1000 подходов угадывает наш алгоритм
+
+    Args:
+        number_predict ([type]): функция угадывания
+
+    Returns:
+        int: среднее количество попыток
+    """
+    count_ls = []
+    random_array = np.random.randint(1, 101, size=10000) # Список из 10000 случайных чисел для угадывания
+    
+    for number in random_array:
+        count_ls.append(number_predict(number))
+    
+    score = int(np.mean(count_ls))
+    print(f'Алгоритм в среднем угадывает число за {score} попыток.')
+
+score_game(number_predict)
