@@ -8,4 +8,4 @@ From the [SkillFactory Data Science course](https://skillfactory.ru/data-scienti
 * [Project 1: ______________](_____)
 * [Project 2: ______________](_____)
 
-## CVs
+## CVs# ods_course
