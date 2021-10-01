@@ -1,7 +1,7 @@
 #### Задача 0 (http://www.pythonchallenge.com/pc/def/0.html):
-'''print(2**38)
+#print(2**38)
 # ------- Ответ: equality
-'''
+
 
 #### Задача 1 (http://www.pythonchallenge.com/pc/def/map.html):
 ## Мое решение:
@@ -29,7 +29,7 @@ print (str.translate(trantab))
 '''
 
 #### Задача 2 (http://www.pythonchallenge.com/pc/def/ocr.html):
-'''
+
 from level2 import my_string
 
 my_list = []
@@ -39,8 +39,8 @@ for char in my_string:
         
 print(my_list)
 
-------- Ответ: equality
-'''
+#------- Ответ: equality
+
 
 ### Задача 3 (http://www.pythonchallenge.com/pc/def/equality.html):
 from level3 import my_string
