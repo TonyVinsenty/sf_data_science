@@ -137,3 +137,5 @@ module_16/data/hh_database.csv
 *.csv
 =======
 >>>>>>> 73097bbbd1c469b521bc663162cecbea3b3e77af
+
+/data/*
